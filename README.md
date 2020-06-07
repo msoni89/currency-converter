@@ -64,7 +64,16 @@ mvn compile
 mvn install
 mvn package
 
-java -jar <jar-file>.jar
+OR
+
+Build without test case
+F:\code-black\currency-converter>mvn clean compile install package -DskipTests=false
+
+Build without test case
+F:\code-black\currency-converter>mvn clean compile install package -DskipTests=true
+
+Running project 
+F:\code-black\currency-converter\target>java -jar currency-converter-0.0.1-SNAPSHOT.jar
 ```
 
 ### Configured Port: 8085
