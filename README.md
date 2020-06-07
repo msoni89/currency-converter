@@ -79,3 +79,15 @@ F:\code-black\currency-converter\target>java -jar currency-converter-0.0.1-SNAPS
 ### Configured Port: 8085
 ### Java >8
 ### Redis server
+
+### Server success logs
+```
+2020-06-08 03:33:20.924  INFO 8936 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4176 ms
+
+2020-06-08 03:33:23.901  INFO 8936 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-08 03:33:25.383  INFO 8936 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-06-08 03:33:26.162  INFO 8936 --- [           main] c.practice.CurrentCalculatorApplication  : Started CurrentCalculatorApplication in 10.754 seconds (JVM run
+ning for 11.632)
+
+
+```
