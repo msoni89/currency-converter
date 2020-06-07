@@ -69,3 +69,5 @@ java -jar <jar-file>.jar
 ```
 
 ### Configured Port: 8085
+### Java >8
+### Redis server
