@@ -53,7 +53,6 @@ The listener trigger fetching of new rates and store them in Redis as described 
 
 ### Possible options:
 ```
-- command line
 - another service. There should be public web api which triggers message sending to the
 queue (PUT http://service2:8080/rates?from=EUR&to=USD)
 ```
