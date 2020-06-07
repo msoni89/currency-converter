@@ -17,6 +17,7 @@ import java.util.Optional;
 import static org.hamcrest.CoreMatchers.is;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -34,7 +35,7 @@ public class TriggerEventControllerTest {
         ResponseDto dto = new ResponseDto("Success", 200);
         Optional<ResponseDto> optional = Optional.of(dto);
         given(triggerService.trigger(Mockito.anyString(), Mockito.anyString())).willReturn(optional);
-        this.mockMvc.perform(get("/v1/trigger/from/{from}/to/{to}", "USD", "INR"))
+        this.mockMvc.perform(put("/v1/rates/from/{from}/to/{to}", "USD", "INR"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.message", is(optional.get().getMessage())));
 
